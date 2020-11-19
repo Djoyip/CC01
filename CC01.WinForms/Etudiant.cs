@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CC01.WinForms
 {
-    public partial class Form1 : Form
+    public partial class FrmEtudiant : Form
     {
-        public Form1()
+        public FrmEtudiant()
         {
             InitializeComponent();
+        }
+
+        private void FrmEtudiant_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
