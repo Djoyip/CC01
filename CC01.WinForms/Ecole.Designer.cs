@@ -31,26 +31,25 @@
             this.lblNom = new System.Windows.Forms.Label();
             this.btnCreer = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.txtBp = new System.Windows.Forms.TextBox();
             this.lblBp = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAdresse = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnImprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtRecherche = new System.Windows.Forms.TextBox();
             this.lblRecherche = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAdresse = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.lblContact = new System.Windows.Forms.Label();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -90,7 +89,6 @@
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4,
             this.Column5,
             this.Column6});
             this.dataGridView1.Location = new System.Drawing.Point(245, 75);
@@ -98,21 +96,21 @@
             this.dataGridView1.Size = new System.Drawing.Size(499, 256);
             this.dataGridView1.TabIndex = 2;
             // 
-            // textBox1
+            // txtNom
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 26);
-            this.textBox1.TabIndex = 3;
+            this.txtNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNom.Location = new System.Drawing.Point(12, 37);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(208, 26);
+            this.txtNom.TabIndex = 3;
             // 
-            // textBox2
+            // txtBp
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(12, 150);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 26);
-            this.textBox2.TabIndex = 5;
+            this.txtBp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBp.Location = new System.Drawing.Point(12, 150);
+            this.txtBp.Name = "txtBp";
+            this.txtBp.Size = new System.Drawing.Size(208, 26);
+            this.txtBp.TabIndex = 5;
             // 
             // lblBp
             // 
@@ -124,13 +122,13 @@
             this.lblBp.TabIndex = 4;
             this.lblBp.Text = "BP/Box";
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(12, 256);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 26);
-            this.textBox3.TabIndex = 7;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(12, 256);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(208, 26);
+            this.txtEmail.TabIndex = 7;
             // 
             // lblEmail
             // 
@@ -138,17 +136,17 @@
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(8, 233);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(48, 20);
+            this.lblEmail.Size = new System.Drawing.Size(88, 20);
             this.lblEmail.TabIndex = 6;
-            this.lblEmail.Text = "Email";
+            this.lblEmail.Text = "EmailEcole";
             // 
-            // textBox4
+            // txtAdresse
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(12, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 26);
-            this.textBox4.TabIndex = 9;
+            this.txtAdresse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdresse.Location = new System.Drawing.Point(12, 98);
+            this.txtAdresse.Name = "txtAdresse";
+            this.txtAdresse.Size = new System.Drawing.Size(208, 26);
+            this.txtAdresse.TabIndex = 9;
             // 
             // label4
             // 
@@ -181,13 +179,13 @@
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtRecherche
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(349, 37);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(395, 26);
-            this.textBox5.TabIndex = 14;
+            this.txtRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecherche.Location = new System.Drawing.Point(349, 37);
+            this.txtRecherche.Name = "txtRecherche";
+            this.txtRecherche.Size = new System.Drawing.Size(395, 26);
+            this.txtRecherche.TabIndex = 14;
             // 
             // lblRecherche
             // 
@@ -218,13 +216,13 @@
             this.lblAdresse.TabIndex = 16;
             this.lblAdresse.Text = "Adresse";
             // 
-            // textBox6
+            // txtContact
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(12, 202);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(208, 26);
-            this.textBox6.TabIndex = 18;
+            this.txtContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact.Location = new System.Drawing.Point(12, 202);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(208, 26);
+            this.txtContact.TabIndex = 18;
             // 
             // lblContact
             // 
@@ -232,9 +230,9 @@
             this.lblContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContact.Location = new System.Drawing.Point(8, 179);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(65, 20);
+            this.lblContact.Size = new System.Drawing.Size(105, 20);
             this.lblContact.TabIndex = 17;
-            this.lblContact.Text = "Contact";
+            this.lblContact.Text = "ContactEcole";
             // 
             // btnSupprimer
             // 
@@ -262,19 +260,14 @@
             this.Column3.HeaderText = "BP/Box";
             this.Column3.Name = "Column3";
             // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            // 
             // Column5
             // 
-            this.Column5.HeaderText = "Contact";
+            this.Column5.HeaderText = "ContactEcole";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Email";
+            this.Column6.HeaderText = "EmailEcole";
             this.Column6.Name = "Column6";
             // 
             // Ecole
@@ -283,21 +276,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(756, 390);
             this.Controls.Add(this.btnSupprimer);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtContact);
             this.Controls.Add(this.lblContact);
             this.Controls.Add(this.lblAdresse);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtRecherche);
             this.Controls.Add(this.lblRecherche);
             this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.btnImprimer);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtAdresse);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtBp);
             this.Controls.Add(this.lblBp);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNom);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCreer);
             this.Controls.Add(this.lblNom);
@@ -315,26 +308,25 @@
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Button btnCreer;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNom;
+        private System.Windows.Forms.TextBox txtBp;
         private System.Windows.Forms.Label lblBp;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnImprimer;
         private System.Windows.Forms.Button btnModifier;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtRecherche;
         private System.Windows.Forms.Label lblRecherche;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblAdresse;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.Label lblContact;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }

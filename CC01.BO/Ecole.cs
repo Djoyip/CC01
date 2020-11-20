@@ -10,22 +10,22 @@ namespace CC01.BO
     {
         public string Nom { get; set; }
         public string Adresse { get; set; }
-        public int Pb { get; set; }
-        public double Contact { get; set; }
-        public string Email { get; set; }
+        public int Bp { get; set; }
+        public double ContactEcole { get; set; }
+        public string EmailEcole { get; set; }
 
         public Ecole()
         {
                 
         }
 
-        public Ecole(string nom, string adresse, int pb, double contact, string email)
+        public Ecole(string nom, string adresse, int bp, double contactEcole, string emailEcole)
         {
             Nom = nom;
             Adresse = adresse;
-            Pb = pb;
-            Contact = contact;
-            Email = email;
+            Bp = bp;
+            ContactEcole = contactEcole;
+            EmailEcole = emailEcole;
         }
     }
 }

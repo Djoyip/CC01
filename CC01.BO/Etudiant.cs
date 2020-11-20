@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace CC01.BO
 {
-    public class Etudiant
+    public class Etudiant : Ecole 
     {
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public DateTime Nee { get; set; }
         public string A { get; set; }
+        public string Sexe { get; set; }
         public double Contact { get; set; }
         public string Email { get; set; }
 
@@ -20,12 +21,13 @@ namespace CC01.BO
                 
         }
 
-        public Etudiant(string nom, string prenom, DateTime nee, string a, double contact, string email)
+        public Etudiant(string nom, string prenom, DateTime nee, string a, string sexe, double contact, string email)
         {
             Nom = nom;
             Prenom = prenom;
             Nee = nee;
             A = a;
+            Sexe = sexe;
             Contact = contact;
             Email = email;
         }
