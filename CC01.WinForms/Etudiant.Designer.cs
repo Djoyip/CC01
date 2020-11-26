@@ -43,6 +43,14 @@
             this.txtContact = new System.Windows.Forms.TextBox();
             this.lblContact = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtRecherche = new System.Windows.Forms.TextBox();
             this.lblRecherche = new System.Windows.Forms.Label();
             this.lblSexe = new System.Windows.Forms.Label();
@@ -55,14 +63,6 @@
             this.lblLogo = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picturePhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
@@ -226,6 +226,46 @@
             this.dataGridView1.Size = new System.Drawing.Size(550, 248);
             this.dataGridView1.TabIndex = 14;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "NOMS";
+            this.Column1.Name = "Column1";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "PRENOMS";
+            this.Column8.Name = "Column8";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "NEE";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "A/A+";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "SEXE";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "MATRICULE";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "EMAIL";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "CONTACT";
+            this.Column7.Name = "Column7";
+            // 
             // txtRecherche
             // 
             this.txtRecherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,6 +273,7 @@
             this.txtRecherche.Name = "txtRecherche";
             this.txtRecherche.Size = new System.Drawing.Size(457, 26);
             this.txtRecherche.TabIndex = 8;
+            this.txtRecherche.TextChanged += new System.EventHandler(this.txtRecherche_TextChanged);
             // 
             // lblRecherche
             // 
@@ -334,46 +375,6 @@
             this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 28;
             this.label1.Text = "Matricule";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "NOMS";
-            this.Column1.Name = "Column1";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "PRENOMS";
-            this.Column8.Name = "Column8";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "NEE";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "A/A+";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "SEXE";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "MATRICULE";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "EMAIL";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "CONTACT";
-            this.Column7.Name = "Column7";
             // 
             // FrmEtudiant
             // 
