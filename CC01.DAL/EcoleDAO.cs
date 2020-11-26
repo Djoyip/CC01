@@ -1,21 +1,22 @@
 ﻿using CC01.BO;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using Newtonsoft.Json;
-
 
 namespace CC01.DAL
 {
-    public class EtudiantDAO
+    public class EcoleDAO
     {
-        private static List<Etudiant> etudiants;
+        private static List<Ecole> ecole;
         private const string FILE_NAME = @"Data/Etudiants.json";
         private FileInfo file;
-        public EtudiantDAO()
+        private List<Ecole> ecoles;
+
+        public EcoleDAO()
         {
             file = new FileInfo(FILE_NAME);
             if (!file.Directory.Exists)
@@ -31,32 +32,30 @@ namespace CC01.DAL
                 using (StreamReader sr = new StreamReader(file.FullName))
                 {
                     string json = sr.ReadToEnd();
-                    etudiants = JsonConvert.DeserializeObject<List<Etudiant>>(json);
-                } 
+                    ecole = JsonConvert.DeserializeObject<List<Ecole>>(json);
+                }
             }
-            if (etudiants == null )
+            if (ecoles == null)
             {
-                etudiants = new List<Etudiant>();
+                ecoles = new List<Ecole>();
             }
         }
-        public void Add (Etudiant etudiant)
+        public void Add(Ecole ecole)
         {
-            etudiants.Add(etudiant);
+            ecoles.Add(ecole);
             Save();
         }
-
         private void Save()
         {
             using (StreamWriter sw = new StreamWriter(file.FullName, false))
             {
-                string json = JsonConvert.SerializeObject(etudiants);
+                string json = JsonConvert.SerializeObject(ecoles);
                 sw.WriteLine(json);
             }
         }
-
-        public void Remove (Etudiant etudiant)
+        public void Remove(Ecole ecole)
         {
-            etudiants.Remove(etudiant);
+            ecoles.Remove(ecole);
             Save();
         }
     }
