@@ -54,7 +54,7 @@ namespace CC01.DAL
             }
         }
 
-        public void Delete (Etudiant etudiant)
+        public void Remove (Etudiant etudiant)
         {
             etudiants.Remove(etudiant);
             Save();

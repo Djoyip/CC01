@@ -18,6 +18,11 @@ namespace CC01.BLL
       public void CreateEtudiant(Etudiant etudiant)
         {
             etudiantRepo.Add(etudiant);
-        }    
+        }
+
+        public void DeleteEtudiant(Etudiant etudiant)
+        {
+            etudiantRepo.Remove(etudiant);
+        }
     }
 }
