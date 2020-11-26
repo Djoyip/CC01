@@ -31,5 +31,15 @@ namespace CC01.WinForms
         {
           
         }
+
+        private void btnCreer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
